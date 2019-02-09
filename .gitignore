@@ -1,17 +1,50 @@
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+# ########## OS ########## #
 
-# dependencies
-/node_modules
-/.pnp
+# macOS
+.DS_store
+
+# ########## EDITOR ########## #
+
+# IntelliJ
+.idea
+*.iml
+out
+gen
+
+# Runtime data
+pids
+*.pid
+*.seed
+
+# Logs
+logs
+*.log
+
+# ########## NODE ########## #
+
+# https://docs.npmjs.com/cli/shrinkwrap#caveats
+node_modules
+.pnp
 .pnp.js
 
-# testing
-/coverage
+# ########## TESTING ########## #
 
-# production
-/build
+coverage
+tests
 
-# misc
+# ########## BUILD & PRODUCTION ########## #
+
+build
+dist
+
+# dotenv
+.env
+
+# webpack
+stats.json
+
+# ########## MISC ########## #
+
 .DS_Store
 .env.local
 .env.development.local
