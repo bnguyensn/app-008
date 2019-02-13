@@ -1,0 +1,53 @@
+{
+  "1": {
+    "id": 1,
+    "firstName": "Henry VII",
+    "lastName": "Tudor",
+    "suffix": "of England",
+    "title": "King of England",
+    "yob": 1457,
+    "yod": 1509,
+    "yoc": 1485,
+    "yoe": 1509,
+    "spouses": [2],
+    "children": [3, 4, 5, 6, 7, 8, 9],
+    "father": null,
+    "mother": null,
+    "predecessor": null,
+    "successor": null
+  },
+  "2": {
+    "id": 2,
+    "firstName": "Elizabeth",
+    "lastName": "Plantagenet",
+    "suffix": "of York",
+    "title": "Queen of England",
+    "yob": 1466,
+    "yod": 1503,
+    "yoc": null,
+    "yoe": null,
+    "spouses": [1],
+    "children": [3, 4, 5, 6, 7, 8, 9],
+    "father": null,
+    "mother": null,
+    "predecessor": null,
+    "successor": null
+  },
+  "3": {
+    "id": 3,
+    "firstName": "Arthur",
+    "lastName": "Tudor",
+    "suffix": "of England",
+    "title": "Prince of Wales",
+    "yob": 1486,
+    "yod": 1502,
+    "yoc": null,
+    "yoe": null,
+    "spouses": [2],
+    "children": [],
+    "father": null,
+    "mother": null,
+    "predecessor": null,
+    "successor": null
+  }
+}
