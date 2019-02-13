@@ -37,6 +37,9 @@ tests
 build
 dist
 
+# admin
+admin
+
 # dotenv
 .env
 
