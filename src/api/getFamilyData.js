@@ -18,15 +18,13 @@ export function getSpousesData(personId: number): PersonData[] {
   const person = getPersonData(personId);
 
   if (person) {
-    const spouses = person.spouses.reduce((acc, spouseId) => {
+    return person.spouses.reduce((acc, spouseId) => {
       const s = getPersonData(spouseId);
       if (s) {
         acc.push(s);
       }
       return acc
     }, []);
-
-    return spouses
   }
 
   return []
