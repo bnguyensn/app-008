@@ -1,6 +1,13 @@
-import React from 'react';
+// @flow
 
-export default function PersonBlock({ personData }) {
+import React from 'react';
+import type { PersonData } from '../api/sample_data/TypeDefs';
+
+type PersonBlockProps = {
+  personData: PersonData,
+}
+
+export default function PersonBlock({ personData }: PersonBlockProps) {
   const displayName = `${personData.firstName} ${personData.lastName}`;
 
   return (
