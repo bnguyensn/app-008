@@ -14,7 +14,8 @@
     "father": null,
     "mother": null,
     "predecessor": null,
-    "successor": null
+    "successor": null,
+    "imgPath": ""
   },
   "2": {
     "id": 2,
@@ -31,7 +32,8 @@
     "father": null,
     "mother": null,
     "predecessor": null,
-    "successor": null
+    "successor": null,
+    "imgPath": ""
   },
   "3": {
     "id": 3,
@@ -48,6 +50,7 @@
     "father": null,
     "mother": null,
     "predecessor": null,
-    "successor": null
+    "successor": null,
+    "imgPath": ""
   }
 }
