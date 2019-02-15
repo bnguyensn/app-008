@@ -1,0 +1,7 @@
+.control-panel-input.valid {
+    background-color: #c8e6c9;
+}
+
+.control-panel-input.invalid {
+    background-color: #ffcdd2;
+}
