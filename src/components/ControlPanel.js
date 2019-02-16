@@ -1,6 +1,7 @@
 // @flow
 
 import React, { useState } from 'react';
+import ControlPanelInput from './ControlPanelInput';
 
 type ControlPanelProps = {
   rootPersonId: number,
@@ -11,12 +12,18 @@ type ControlPanelStates = {
   inputValid: boolean,
 };
 
-export default function({ rootPersonId, setRootPersonId }: ControlPanelProps) {
+export default function ControlPanel({
+  rootPersonId,
+  setRootPersonId,
+}: ControlPanelProps) {
   const [inputValid, setInputValid] = useState(true);
 
-  const handleChange = (e: SyntheticInputEvent<HTMLInputElement>) => {
+  const handleRootPersonIdChange = (
+    e: SyntheticInputEvent<HTMLInputElement>
+  ) => {
     const value = e.currentTarget.value;
 
+    // enforce rootPersonId to be an integer
     if (Number.isInteger(value)) {
       setInputValid(true);
       setRootPersonId(Number(value));
@@ -27,11 +34,10 @@ export default function({ rootPersonId, setRootPersonId }: ControlPanelProps) {
 
   return (
     <div className="control-panel-ctn">
-      <input
-        className={`control-panel-input ${inputValid ? 'valid' : 'invalid'}`}
-        type="text"
+      <ControlPanelInput
+        inputValid={inputValid}
+        handleChange={handleRootPersonIdChange}
         value={rootPersonId}
-        onChange={handleChange}
       />
     </div>
   );
